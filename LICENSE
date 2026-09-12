@@ -42,3 +42,5 @@ network add-ons) and third-party Python packages used by the Jupyter
 notebook (OpenCV, TensorFlow/Keras, scikit-learn, scikit-image, and
 others), none of which are bundled in this repository and which are
 subject to their own license terms -- see DEPENDENCIES.md.
+
+DeTraC is from Birmingham City University: https://github.com/asmaa4may/DeTraC_COVId19
