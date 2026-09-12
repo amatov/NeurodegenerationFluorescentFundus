@@ -56,9 +56,11 @@ end
 PixelSize = 0.09 ; % microns per pixel
 
 %[fileName,dirName] = uigetfile('*.tif','Julie, please select a TIF file for analysis');
+% EDIT: hardcoded absolute path to the original author's machine
 dirName = uigetdir('C:\');
 
 cd(dirName)
+% EDIT: hardcoded absolute path to the original author's machine
 rootdir = dirName;%'A:\Amydis\Glaucoma SDEB Eye #2';
 filelistT2 = dir(fullfile(rootdir, '**\*T2_ORG.tif'));
 filelistT3 = dir(fullfile(rootdir, '**\*T3_ORG.tif'));

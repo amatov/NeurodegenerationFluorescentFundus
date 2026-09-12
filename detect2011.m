@@ -38,6 +38,7 @@ function metrics = detect2011
 
 coef = 2;
 sigma = 4;
+% EDIT: hardcoded absolute path to the original author's machine
 I = imread('A:\Amydis\GC01.tif');
 
     I=double(I);

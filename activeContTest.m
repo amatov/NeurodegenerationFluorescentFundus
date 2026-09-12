@@ -33,6 +33,7 @@ function metrics = activeContTest;
 %aux = imread('A:\Amydis\NHP Data for Alex\Cyno 200190\Cyno2_003.tif');
 %aux = imread('A:\Amydis\NHP Data for Alex\Cyno 200193\Cyno2_003.tif');
 %aux = imread('A:\Amydis\NHP Data for Alex\Cyno 200217\Cyno2_003.tif');
+% EDIT: hardcoded absolute path to the original author's machine
 aux = imread('A:\Amydis\NHP Data for Alex\Cyno 200251\Cyno2_006.tif');
 
 %aux = imread('A:\Amydis\Glaucoma SDEB Eye #2\Bottom\GC 090622-2 Bottom 1 40x 2011 Ab-647 01-Image Export-01\GC 090622-2 Bottom 1 40x 2011 Ab-647 01-Image Export-01_ChS1-T2_ORG.tif');

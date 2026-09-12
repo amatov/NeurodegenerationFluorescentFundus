@@ -26,6 +26,7 @@ function [y0detect,x0detect,Accumulator] = houghcircleTest(I, minR, maxR)
 %
 % Alexandre Matov, Januart 6th, 2023
 
+% EDIT: hardcoded absolute path to the original author's machine
 A = imread('A:\Amydis\Glaucoma SDEB Eye #2\Bottom\GC 090622-2 Bottom 1 40x 2011 Ab-647 01-Image Export-01\GC 090622-2 Bottom 1 40x 2011 Ab-647 01-Image Export-01_ChS1-T2_ORG.tif');
 %A = imread('coins.png');
 imshow(A)

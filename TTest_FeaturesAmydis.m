@@ -1,4 +1,5 @@
 cellline = {'Optos','ExVivo','InVivo' };
+% EDIT: hardcoded absolute path to the original author's machine
 imgroot = 'A:\Amydis\';
 
 

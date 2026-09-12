@@ -28,7 +28,9 @@ function [matchMetricSIFT,matchMetricSURF] = matchSIFT(scale,theta)
 
 % good example
 %I1 = imread('A:\Amydis\NHP Data for Alex\Cyno 170395\Cyno1_000.tif');
+% EDIT: hardcoded absolute path to the original author's machine
 I1 = imread('A:\Amydis\NewDataJan2023\Cyno 170395\Cyno1_005.tif');
+% EDIT: hardcoded absolute path to the original author's machine
 I2 = imread('A:\Amydis\NewDataJan2023\Cyno 170395\Visit 2\Cyno1_012.png');
 
 %I1 = imread('A:\Amydis\NHP Data for Alex\Cyno 191815\Cyno1_004.tif');

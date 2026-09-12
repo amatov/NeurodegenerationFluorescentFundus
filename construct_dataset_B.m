@@ -28,32 +28,40 @@ idx_SARS = kmeans(features_SARS,K);
 %%
 %%%%%%%%%%%%%%%% decompostion normal classe
 
+% EDIT: hardcoded absolute path to the original author's machine
 srcFiles_normal = dir('E:\..............\dataset A\normal\*.png');
 noimages_normal=length(srcFiles_normal);
 
 for i=1:noimages_normal
+   % EDIT: hardcoded absolute path to the original author's machine
    filename_normal = strcat('E:\..............\dataset A\normal\',srcFiles_normal(i).name);
     I=imread(filename_normal); 
     
     if idx_norm(i)==1 
+        % EDIT: hardcoded absolute path to the original author's machine
         imwrite(I,fullfile('E:\...............\dataset B\norm_1\',[srcFiles_normal(i).name]))
     else
+        % EDIT: hardcoded absolute path to the original author's machine
         imwrite(I,fullfile('E:\...............\dataset B\norm_2\',[srcFiles_normal(i).name]))
     end
 end
 
 %%
 %%%%%%%%%%%%%%%% decompostion COVID_19 classe 
+% EDIT: hardcoded absolute path to the original author's machine
 srcFiles_COVID_19 = dir('E:\...............\dataset A\COVID_19\*.png'); 
 noimages_COVID_19 = length(srcFiles_COVID_19);
 
 for j=1:noimages_COVID_19
+   % EDIT: hardcoded absolute path to the original author's machine
    filename_COVID_19 = strcat('E:\...............\dataset A\COVID_19\',srcFiles_COVID_19(j).name);
    I=imread(filename_COVID_19); 
     
     if idx_convid19(j)==1 
+        % EDIT: hardcoded absolute path to the original author's machine
         imwrite(I,fullfile('E:\..............\dataset B\COVID_19_1\',[srcFiles_COVID_19(j).name]))
     else
+        % EDIT: hardcoded absolute path to the original author's machine
         imwrite(I,fullfile('E:\..............\dataset B\COVID_19_2\',[srcFiles_COVID_19(j).name]))
     end
 end
@@ -61,16 +69,20 @@ end
 
 %% 
 %%%%%%%%%%%%%%%% decompostion SARS classe
+% EDIT: hardcoded absolute path to the original author's machine
 srcFiles_SARS   = dir('E:\...............\dataset A\SARS\*.png'); 
 noimages_SARS=length(srcFiles_SARS);
 
 for n=1:noimages_SARS
+   % EDIT: hardcoded absolute path to the original author's machine
    filename_SARS = strcat('E:\...............\dataset A\SARS\',srcFiles_SARS(n).name);
     I=imread(filename_SARS); 
     
     if idx_SARS(n)==1 
+        % EDIT: hardcoded absolute path to the original author's machine
         imwrite(I,fullfile('E:\...............\dataset B\SARS_1\',[srcFiles_SARS(n).name]))
     else
+        % EDIT: hardcoded absolute path to the original author's machine
         imwrite(I,fullfile('E:\...............\dataset B\SARS_2\',[srcFiles_SARS(n).name]))
     end
 end

@@ -44,6 +44,7 @@ function [trainingSet,testSet] = BoVWtest
 %setDir  = fullfile(toolboxdir('vision'),'visiondata','imageSets');
 %imds = imageDatastore(setDir,'IncludeSubfolders',true,'LabelSource',...
 %    'foldernames');
+% EDIT: hardcoded absolute path to the original author's machine
 imds = imageDatastore(fullfile("A:\Amydis\NHP Data for Alex"),...
 "IncludeSubfolders",true,"FileExtensions",".tif","LabelSource","foldernames");
 imshow(preview(imds));
@@ -57,6 +58,7 @@ confMatrix = evaluate(categoryClassifier,testSet)
 
 mean(diag(confMatrix))
 
+% EDIT: hardcoded absolute path to the original author's machine
 img = imread('A:\Amydis\NHP Data for Alex\Cyno 170395\Cyno1_000.tif');
 [labelIdx, score] = predict(categoryClassifier,img);
 

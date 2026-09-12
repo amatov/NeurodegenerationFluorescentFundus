@@ -25,6 +25,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% load images
+% EDIT: hardcoded absolute path to the original author's machine
 dataset_B='E:\...............\dataset B';
 
 % Create an imageDataStore to read images and store images categories 
@@ -96,6 +97,7 @@ opts = trainingOptions('sgdm',...
                     'Shuffle','every-epoch','Momentum',0.95,...
                     'Plots','training-progress','LearnRateSchedule', 'piecewise', ...    
                     'LearnRateSchedule', 'piecewise', 'LearnRateDropFactor', 0.95,'LearnRateDropPeriod',5,...
+                    % EDIT: hardcoded absolute path to the original author's machine
                     'CheckpointPath' ,'C:\.....................');
                                       
 %% Train the network using the training set using GPU Hardware 
@@ -118,6 +120,7 @@ timeString = datestr(elapsed_time/(24*60*60), 'DD:HH:MM:SS.FFF');
 for i=1 : noimages
 
     
+      % EDIT: hardcoded absolute path to the original author's machine
       filename = strcat('C:\.........\New folder\',srcFiles_CheckpointPath(i).name);
       load(filename);
            

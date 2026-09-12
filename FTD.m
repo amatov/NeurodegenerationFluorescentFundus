@@ -32,15 +32,20 @@ end
 PixelSize = 0.08 ; % microns per pixel
 
 % load images for analysis testing
+% EDIT: hardcoded absolute path to the original author's machine
 c1 = imread('A:\Amydis\FTD Zoom\FTD-TDP RFAC-10 43x 2011 pTDP-594 TDP-647 02a\FTD-TDP RFAC-10 43x 2011 pTDP-594 TDP-647 02a_c1.tif');
 c1 = double(rgb2gray(c1));
+% EDIT: hardcoded absolute path to the original author's machine
 c2 = imread('A:\Amydis\FTD Zoom\FTD-TDP RFAC-10 43x 2011 pTDP-594 TDP-647 02a\FTD-TDP RFAC-10 43x 2011 pTDP-594 TDP-647 02a_c2.tif');
 c2 = double(rgb2gray(c2));
+% EDIT: hardcoded absolute path to the original author's machine
 c3 = imread('A:\Amydis\FTD Zoom\FTD-TDP RFAC-10 43x 2011 pTDP-594 TDP-647 02a\FTD-TDP RFAC-10 43x 2011 pTDP-594 TDP-647 02a_c3.tif');
 c3 = double(rgb2gray(c3));
 
+% EDIT: hardcoded absolute path to the original author's machine
 c11 = imread('A:\Amydis\FTD Zoom\AD A-21-150-55 63x 2011 AB594 TDP647 05\AD A-21-150-55 63x 2011 AB594 TDP647 05_c1.tif');
 c11 = double(rgb2gray(c11));
+% EDIT: hardcoded absolute path to the original author's machine
 c33 = imread('A:\Amydis\FTD Zoom\AD A-21-150-55 63x 2011 AB594 TDP647 05\AD A-21-150-55 63x 2011 AB594 TDP647 05_c3.tif');
 c33 = double(rgb2gray(c33));
 

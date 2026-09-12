@@ -32,6 +32,7 @@ function metrics = autofluorescenceNHP
 
 %aux = imread('A:\Amydis\NHP Data for Alex\Cyno 170395\Cyno1_000.tif');
 % aux = imread('A:\Amydis\NHP Data for Alex\Cyno 180424\Cyno1_004.tif');
+% EDIT: hardcoded absolute path to the original author's machine
 aux = imread('A:\Amydis\NHP Data for Alex\Cyno 191797\Cyno1_000.tif');
 %aux = imread('A:\Amydis\NHP Data for Alex\Cyno 191800\Cyno1_004.tif');
 %aux = imread('A:\Amydis\NHP Data for Alex\Cyno 191815\Cyno1_004.tif');

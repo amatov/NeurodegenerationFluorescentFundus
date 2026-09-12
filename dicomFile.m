@@ -21,6 +21,7 @@ function dicomFile
 % rootdir = dirName;%'A:\Amydis\Glaucoma SDEB Eye #2';
 % filelist = dir(fullfile(rootdir, '*.dcm'));
 %-----------------------------------------------
+% EDIT: hardcoded absolute path to the original author's machine
 I1 = dicomread('A:\Amydis\AMYDIS FIH - COHORT 1\1\OPTOS\01-101_PROBE____01-101_ 1\1.2.826.0.2.139953.3.1.2.3790383533.20220906090530.1610592815.dcm');
 %I1 = dicomread('A:\Amydis\AMYDIS FIH - COHORT 1\1\OPTOS\01-101_PROBE____01-101_ 1\1.2.826.0.2.139953.3.1.2.3790383533.20220906090530.1611098917.dcm');
 %I1 = dicomread('A:\Amydis\AMYDIS FIH - COHORT 1\1\OPTOS\01-101_PROBE____01-101_ 1\1.2.826.0.2.139953.3.1.2.3790383533.20220906090530.1610592815.dcm');

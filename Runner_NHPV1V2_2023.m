@@ -1,3 +1,4 @@
+% EDIT: hardcoded absolute path to the original author's machine
 addpath(genpath(['A:\Amydis\NewDataJan2023']));
 
 % this function create profile.mat in each image directory; profile.mat stores file names in each channel

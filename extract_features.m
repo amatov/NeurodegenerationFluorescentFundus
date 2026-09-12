@@ -19,6 +19,7 @@ load('net_checkpoint__...........................')
 layer = 'fc7';
 
 %% %%%%%%%%%%%%%%%% load covide_19 images%%%%%%%%%%%%%%%%
+% EDIT: hardcoded absolute path to the original author's machine
 covide19_images=dir('E:\.................\dataset_A\Covid_19\*.png');
 noimages_covide19=length(covide19_images);
 
@@ -26,6 +27,7 @@ features_covide19=zeros(noimages_covide19,4096);
   
 for i=1 : noimages_covide19
     
+    % EDIT: hardcoded absolute path to the original author's machine
     filename_covide19 = strcat('E:\.................\dataset_A\Covid_19\',covide19_images(i).name);
     covide_image=imageDatastore(filename_covide19);
     covide_image.Labels='Covid_19';
@@ -38,6 +40,7 @@ end
 
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%% load normal images%%%%%%%%%%%%%%%%
+% EDIT: hardcoded absolute path to the original author's machine
 normal_images=dir('E:\.................\dataset_A\normal\*.png');
 noimages_norm=length(normal_images);
 
@@ -45,6 +48,7 @@ features_normal=zeros(noimages_norm,4096);
 
  for j=1 : noimages_norm
     
+    % EDIT: hardcoded absolute path to the original author's machine
     filename_normal = strcat('E:\.................\dataset_A\normal\',normal_images(j).name);
     norm_image=imageDatastore(filename_normal);
     norm_image.Labels='normal';
@@ -57,6 +61,7 @@ features_normal=zeros(noimages_norm,4096);
  
 %% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % %%%%%%%%%%%%%%%% load SARS images%%%%%%%%%%%%%%%%
+% EDIT: hardcoded absolute path to the original author's machine
 SARS_images=dir('E:\.................\dataset_A\SARS\*.png');
 noimages_SARS=length(SARS_images);
 
@@ -64,6 +69,7 @@ features_SARS=zeros(noimages_SARS,4096);
 
  for j=1 : noimages_SARS
     
+    % EDIT: hardcoded absolute path to the original author's machine
     filename_SARS = strcat('E:\.................\dataset_A\SARS\',SARS_images(j).name);
     SARS_image=imageDatastore(filename_SARS);
     SARS_image.Labels='SARS';

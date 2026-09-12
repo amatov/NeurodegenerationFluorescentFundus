@@ -57,6 +57,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% load image dataset 
+% EDIT: hardcoded absolute path to the original author's machine
 dataset_A='F:\..............\dataset_A';
 
 % Create an imageDataStore to read images and store image categories
@@ -121,6 +122,7 @@ opts = trainingOptions('sgdm',...
                     'Shuffle','every-epoch','Momentum',0.9,...
                     'Plots','training-progress','LearnRateSchedule', 'piecewise', ...    
                     'LearnRateSchedule', 'piecewise', 'LearnRateDropFactor', 0.9,'LearnRateDropPeriod',3,...
+                    % EDIT: hardcoded absolute path to the original author's machine
                     'CheckpointPath' ,'C:\.........\New folder');
                       
 %% Train the network using the training set using GPU Hardware 
@@ -133,12 +135,14 @@ timeString = datestr(elapsed_time/(24*60*60), 'DD:HH:MM:SS.FFF');
        
 %% the classification performance
 % load mat.file from CheckpointPath
+% EDIT: hardcoded absolute path to the original author's machine
 srcFiles_CheckpointPath = dir('C:\.........\New folder','convnet_checkpoint_*.mat');  
 noimages=length(srcFiles_CheckpointPath);
 
 for i=1 : noimages
 
     
+     % EDIT: hardcoded absolute path to the original author's machine
      filename = strcat('C:\.........\New folder\',srcFiles_CheckpointPath(i).name);
      load(filename);
      
