@@ -18,8 +18,6 @@ AlexNet add-ons) and the notebook's separate Python stack.
 - `results/` -- per-sample segmented images, metrics files, and summary
   plots produced by the analysis scripts.
 - `reports/` -- PDF write-ups and reports.
-- Hardcoded absolute paths to the original author's machine are flagged
-  with a `% EDIT:` comment directly above them.
 - **License:** see [LICENSE](LICENSE) -- research/educational use.
 
 ## About
