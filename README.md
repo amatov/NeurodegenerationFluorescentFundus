@@ -1,5 +1,7 @@
 ## NeurodegenerationFluorescentFundus
 
+Matlab code I wrote for the detection of neurodegeneration by ex vivo and in vivo analysis of the fundus of the eye in human samples and non-human primates. Diseases for which I performed computer vision analyses on patient samples: Parkinson's disease, frontotemporal dementia, glaucoma, amyotrophic lateral sclerosis, transthyretin amyloidosis, and cerebral amyloid angiopathy.
+
 ## Quick start
 
 This repository contains Matlab scripts and a Jupyter notebook for the
@@ -24,15 +26,11 @@ AlexNet add-ons) and the notebook's separate Python stack.
 
 ## About
 
-Matlab code I wrote for the detection of neurodegeneration by ex vivo and in vivo analysis of the fundus of the eye in human samples and non-human primates
-
-Diseases I worked on and performed computer vision analyses on patient samples: Parkinson's disease, frontotemporal dimentia, glaucoma, amyotrophic lateral sclerosis, transthyretin amyloidosis, and cerebral amyloid angiopathy
-
-I developed a computational strategy for the differential diagnosis based on the imaging of the eye. The context of this project was the safe and convenient methods for differential diagnosis of various diseases and conditions associated with protein misfolding and aggregation. The computer visions strategy I outlined aimed at facilitating the differential diagnosis of patients having a disease or condition associated with protein aggregation and consisted of capturing fundus fluorescence (FF) images of the retina of a subject who has been administered a compound that emits fluorescence upon binding to a misfolded or aggregated protein, and analyzing the FF images with a machine learning algorithm to assign the subject to a cohort with a particular disease or condition. 
+I developed a computational strategy for the differential diagnosis based on the imaging of the eye. The context of this project was the safe and convenient methods for differential diagnosis of various diseases and conditions associated with protein misfolding and aggregation. The computer vision strategy I outlined aimed at facilitating the differential diagnosis of patients having a disease or condition associated with protein aggregation and consisted of capturing fundus fluorescence (FF) images of the retina of a subject who has been administered a compound that emits fluorescence upon binding to a misfolded or aggregated protein, and analyzing the FF images with a machine learning algorithm to assign the subject to a cohort with a particular disease or condition. 
 
 The list of the diseases is: Alzheimer’s disease, cerebral amyloid angiopathy, traumatic brain injury, glaucoma, age-related macular degeneration, Parkinson’s disease, multiple system atrophy, dementia with Lewy bodies, amyotrophic lateral sclerosis, Creutzfeldt-Jakob disease (CJD), which can be sporadic (sCJD), hereditary / familial (fCJD), iatrogenic (iCJD) or variant (vCJD), protease-sensitive prionopathy, Gerstmann-Sträussler-Scheinker disease, Kuru, or fatal insomnia. 
 
-An artificial intelligence (AI) deep learning (DL) algorithm with a graphical user interface (GUI) can automatically evaluate the FF images and assist physicians with the diagnosis. The proteins known to be susceptible to aggregation are amyloid beta, α-synuclein, prions, transthyretin, tau, and other, such as lysozyme, beta 2 microglobulin, gelsolin, keratoepithelin, cystatin, immunoglobulin light chain AL, S-IBM, superoxide dismutase, and the leukocyte chemotactic factor 2. 
+An artificial intelligence (AI) deep learning (DL) algorithm with a graphical user interface (GUI) can automatically evaluate the FF images and assist physicians with the diagnosis. The proteins known to be susceptible to aggregation are amyloid beta, α-synuclein, prions, transthyretin, tau, and others, such as lysozyme, beta 2 microglobulin, gelsolin, keratoepithelin, cystatin, immunoglobulin light chain AL, S-IBM, superoxide dismutase, and the leukocyte chemotactic factor 2. 
 
 The signal emitted by these proteins may be fluorescent or infrared. 
 
@@ -40,7 +38,7 @@ The dye administration is topical, by injection into the eye, or by IV bolus inj
 
 The tracer signals can be automatically quantified for the number of deposits, their shape, brightness, area or volume to build, for instance, sigmoid curve models for different biomarker metrics during pathogenesis or drug treatment. 
 
-During treatment, differentially resistant aggregates exhibit different growth / killing curves and, at any given time point, could stop responding to treatment. Thus, I will model the changes in aggregate metrics as Markov chains with absorbing states and use Bayes rules statistics to build the model. Sigmoidal curves are modeled as the Gauss error function of aggregate growth based on fitting of volume values to sigmoidal growth models and evaluating the best fit with the objective after three to four longitudinal measurements to anticipate the speed of aggregate growth (state diagram automata). Retina image series contain populations of both quiescent and growing aggregates, which can switch their behavior between the two states at random moments or stochastically. 
+During treatment, differentially resistant aggregates exhibit different growth / killing curves and, at any given time point, could stop responding to treatment. Thus, I will model the changes in aggregate metrics as Markov chains with absorbing states and use Bayes' rule statistics to build the model. Sigmoidal curves are modeled as the Gauss error function of aggregate growth based on fitting of volume values to sigmoidal growth models and evaluating the best fit with the objective after three to four longitudinal measurements to anticipate the speed of aggregate growth (state diagram automata). Retina image series contain populations of both quiescent and growing aggregates, which can switch their behavior between the two states at random moments or stochastically. 
 
 The signaling that causes these switches is not understood. 
 
