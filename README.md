@@ -2,10 +2,10 @@
 
 ## Quick start
 
-This repository contains MATLAB scripts and a Jupyter notebook for the
+This repository contains Matlab scripts and a Jupyter notebook for the
 detection and classification of neurodegeneration-associated protein
 aggregation via fundus fluorescence imaging. See
-[DEPENDENCIES.md](DEPENDENCIES.md) for the required MATLAB toolboxes
+[DEPENDENCIES.md](DEPENDENCIES.md) for the required Matlab toolboxes
 (Image Processing, Computer Vision, Deep Learning with the ResNet-18/
 AlexNet add-ons) and the notebook's separate Python stack.
 

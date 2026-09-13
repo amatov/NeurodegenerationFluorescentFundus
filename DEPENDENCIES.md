@@ -1,8 +1,8 @@
 # Dependencies
 
-## MATLAB toolboxes
+## Matlab toolboxes
 
-No specific MATLAB version is recorded. The `.m` scripts use functions
+No specific Matlab version is recorded. The `.m` scripts use functions
 from the following toolboxes:
 
 - **Image Processing Toolbox** -- `activecontour`, `dicomread`/
