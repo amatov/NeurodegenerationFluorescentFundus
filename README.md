@@ -1,4 +1,4 @@
-## NeurodegenerationFluorescentFundus
+## Neurodegeneration Fluorescent Fundus
 
 Matlab code I wrote for the detection of neurodegeneration by ex vivo and in vivo analysis of the fundus of the eye in human samples and non-human primates. Diseases for which I performed computer vision analyses on patient samples: Parkinson's disease, frontotemporal dementia, glaucoma, amyotrophic lateral sclerosis, transthyretin amyloidosis, and cerebral amyloid angiopathy.
 
